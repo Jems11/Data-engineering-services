@@ -154,6 +154,7 @@ em { font-style: normal; color: var(--blue); }
 .nav-inner {
   display: flex; align-items: center; gap: 40px;
   max-width: 1180px; margin: 0 auto; padding: 20px 32px;
+  justify-content: space-between;
 }
 .logo {
   font-family: 'Syne', sans-serif;
@@ -289,6 +290,7 @@ em { font-style: normal; color: var(--blue); }
   text-transform: uppercase;
   animation: fadeInUp 1s 1.5s both;
 }
+
 .scroll-line {
   width: 1px; height: 40px;
   background: linear-gradient(to bottom, var(--blue-light), transparent);
@@ -691,9 +693,14 @@ em { font-style: normal; color: var(--blue); }
   .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
   .hero-actions { flex-direction: column; align-items: center; }
   .contact-form { padding: 28px 20px; }
+  .hero-scroll-hint {
+    display: none;
+  }
 }
 @media (max-width: 480px) {
   .container { padding: 0 20px; }
   .stats-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
   .process-step { flex: 0 0 100%; }
+  .cursor {display: none;}
+  .cursor-follower {display: none;}
 }
